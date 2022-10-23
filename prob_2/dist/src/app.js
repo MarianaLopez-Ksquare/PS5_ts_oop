@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const matrix_1 = require("./matrix");
+const a = new matrix_1.Matrix({ rows: 2, columns: 2 }, [[1, 2], [1, 4]]);
+console.log("Matrix a");
+matrix_1.Matrix.log(a);
+const b = new matrix_1.Matrix({ rows: 2, columns: 2 }, [[2, 1], [1, 3]]);
+console.log("Matrix b");
+matrix_1.Matrix.log(b);
+const c = matrix_1.Matrix.add(a, b);
+console.log("Sum of a and b");
+matrix_1.Matrix.log(c);
+const d = matrix_1.Matrix.dotProduct(a, b);
+console.log("product dot of a and b");
+matrix_1.Matrix.log(d);
